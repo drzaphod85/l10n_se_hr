@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Municipalities for Skåne region -->
+        <record id="municipality_1214" model="res.municipality">
+            <field name="name">Svalöv</field>
+            <field name="code">1214</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1230" model="res.municipality">
+            <field name="name">Staffanstorp</field>
+            <field name="code">1230</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1231" model="res.municipality">
+            <field name="name">Burlöv</field>
+            <field name="code">1231</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1233" model="res.municipality">
+            <field name="name">Vellinge</field>
+            <field name="code">1233</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1256" model="res.municipality">
+            <field name="name">Östra Göinge</field>
+            <field name="code">1256</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1257" model="res.municipality">
+            <field name="name">Örkelljunga</field>
+            <field name="code">1257</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1260" model="res.municipality">
+            <field name="name">Bjuv</field>
+            <field name="code">1260</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1261" model="res.municipality">
+            <field name="name">Kävlinge</field>
+            <field name="code">1261</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1262" model="res.municipality">
+            <field name="name">Lomma</field>
+            <field name="code">1262</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1263" model="res.municipality">
+            <field name="name">Svedala</field>
+            <field name="code">1263</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1264" model="res.municipality">
+            <field name="name">Skurup</field>
+            <field name="code">1264</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1265" model="res.municipality">
+            <field name="name">Sjöbo</field>
+            <field name="code">1265</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1266" model="res.municipality">
+            <field name="name">Hörby</field>
+            <field name="code">1266</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1267" model="res.municipality">
+            <field name="name">Höör</field>
+            <field name="code">1267</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1270" model="res.municipality">
+            <field name="name">Tomelilla</field>
+            <field name="code">1270</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1272" model="res.municipality">
+            <field name="name">Bromölla</field>
+            <field name="code">1272</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1273" model="res.municipality">
+            <field name="name">Osby</field>
+            <field name="code">1273</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1275" model="res.municipality">
+            <field name="name">Perstorp</field>
+            <field name="code">1275</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1276" model="res.municipality">
+            <field name="name">Klippan</field>
+            <field name="code">1276</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1277" model="res.municipality">
+            <field name="name">Åstorp</field>
+            <field name="code">1277</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1278" model="res.municipality">
+            <field name="name">Båstad</field>
+            <field name="code">1278</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1280" model="res.municipality">
+            <field name="name">Malmö</field>
+            <field name="code">1280</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1281" model="res.municipality">
+            <field name="name">Lund</field>
+            <field name="code">1281</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1282" model="res.municipality">
+            <field name="name">Landskrona</field>
+            <field name="code">1282</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1283" model="res.municipality">
+            <field name="name">Helsingborg</field>
+            <field name="code">1283</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1284" model="res.municipality">
+            <field name="name">Höganäs</field>
+            <field name="code">1284</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1285" model="res.municipality">
+            <field name="name">Eslöv</field>
+            <field name="code">1285</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1286" model="res.municipality">
+            <field name="name">Ystad</field>
+            <field name="code">1286</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1287" model="res.municipality">
+            <field name="name">Trelleborg</field>
+            <field name="code">1287</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1290" model="res.municipality">
+            <field name="name">Kristianstad</field>
+            <field name="code">1290</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1291" model="res.municipality">
+            <field name="name">Simrishamn</field>
+            <field name="code">1291</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1292" model="res.municipality">
+            <field name="name">Ängelholm</field>
+            <field name="code">1292</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+        <record id="municipality_1293" model="res.municipality">
+            <field name="name">Hässleholm</field>
+            <field name="code">1293</field>
+            <field name="region_id" ref="l10n_se_hr.region_12"/>
+            <!-- Tax data will be fetched from Skatteverket API -->
+        </record>
+    </data>
+</odoo>

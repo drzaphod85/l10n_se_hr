@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Region Views -->
+    <record id="view_res_region_form" model="ir.ui.view">
+        <field name="name">res.region.form</field>
+        <field name="model">res.region</field>
+        <field name="arch" type="xml">
+            <form string="Region">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="municipality_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_region_tree" model="ir.ui.view">
+        <field name="name">res.region.tree</field>
+        <field name="model">res.region</field>
+        <field name="arch" type="xml">
+            <tree string="Regions">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Municipality Views -->
+    <record id="view_res_municipality_form" model="ir.ui.view">
+        <field name="name">res.municipality.form</field>
+        <field name="model">res.municipality</field>
+        <field name="arch" type="xml">
+            <form string="Municipality">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="region_id"/>
+                        </group>
+                        <group>
+                            <field name="tax_table_number"/>
+                            <field name="total_tax_rate"/>
+                            <field name="church_tax_rate"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_municipality_tree" model="ir.ui.view">
+        <field name="name">res.municipality.tree</field>
+        <field name="model">res.municipality</field>
+        <field name="arch" type="xml">
+            <tree string="Municipalities">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="region_id"/>
+                <field name="tax_table_number"/>
+                <field name="total_tax_rate"/>
+                <field name="church_tax_rate"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_res_municipality_search" model="ir.ui.view">
+        <field name="name">res.municipality.search</field>
+        <field name="model">res.municipality</field>
+        <field name="arch" type="xml">
+            <search string="Search Municipality">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="region_id"/>
+                <field name="tax_table_number"/>
+                <group expand="0" string="Group By">
+                    <filter string="Region" name="groupby_region" domain="[]" context="{'group_by': 'region_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Parish Views -->
+    <record id="view_res_parish_form" model="ir.ui.view">
+        <field name="name">res.parish.form</field>
+        <field name="model">res.parish</field>
+        <field name="arch" type="xml">
+            <form string="Parish">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="municipality_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_parish_tree" model="ir.ui.view">
+        <field name="name">res.parish.tree</field>
+        <field name="model">res.parish</field>
+        <field name="arch" type="xml">
+            <tree string="Parishes">
+                <field name="name"/>
+                <field name="municipality_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_res_parish_search" model="ir.ui.view">
+        <field name="name">res.parish.search</field>
+        <field name="model">res.parish</field>
+        <field name="arch" type="xml">
+            <search string="Search Parish">
+                <field name="name"/>
+                <field name="municipality_id"/>
+                <group expand="0" string="Group By">
+                    <filter string="Municipality" name="groupby_municipality" domain="[]" context="{'group_by': 'municipality_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>

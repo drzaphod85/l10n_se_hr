@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_salary_rule_category_se_base" model="hr.salary.rule.category">
+            <field name="name">Swedish Base</field>
+            <field name="code">SEBASE</field>
+        </record>
+        
+        <record id="hr_salary_rule_category_se_tax" model="hr.salary.rule.category">
+            <field name="name">Swedish Taxes</field>
+            <field name="code">SETAX</field>
+        </record>
+        
+        <record id="hr_salary_rule_category_se_allowance" model="hr.salary.rule.category">
+            <field name="name">Swedish Allowances</field>
+            <field name="code">SEALL</field>
+        </record>
+        
+        <record id="hr_salary_rule_category_se_deduction" model="hr.salary.rule.category">
+            <field name="name">Swedish Deductions</field>
+            <field name="code">SEDED</field>
+        </record>
+        
+        <!-- Base Salary -->
+        <record id="hr_salary_rule_se_basic" model="hr.salary.rule">
+            <field name="name">Basic Salary</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">SEBASIC</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_base"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = contract.wage</field>
+            <field name="is_swedish_specific" eval="True"/>
+        </record>
+        
+        <!-- Preliminary Tax -->
+        <record id="hr_salary_rule_se_tax" model="hr.salary.rule">
+            <field name="name">Preliminary Tax</field>
+            <field name="sequence" eval="100"/>
+            <field name="code">SETAX</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_tax"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+# This is a simplified implementation
+# Real implementation would use tax tables from Skatteverket
+municipality = employee.municipality_id
+if municipality:
+    tax_rate = municipality.total_tax_rate / 100.0
+    result = -categories.GROSS * tax_rate
+else:
+    result = -categories.GROSS * 0.3  # Default 30% if no municipality
+            </field>
+            <field name="is_swedish_specific" eval="True"/>
+        </record>
+        
+        <!-- Church Tax -->
+        <record id="hr_salary_rule_se_church_tax" model="hr.salary.rule">
+            <field name="name">Church Tax</field>
+            <field name="sequence" eval="101"/>
+            <field name="code">SECHURCH</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_tax"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.church_member</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+municipality = employee.municipality_id
+if municipality:
+    church_tax_rate = municipality.church_tax_rate / 100.0
+    result = -categories.GROSS * church_tax_rate
+else:
+    result = -categories.GROSS * 0.01  # Default 1% if no municipality
+            </field>
+            <field name="is_swedish_specific" eval="True"/>
+            <field name="applies_church_tax" eval="True"/>
+        </record>
+        
+        <!-- Vacation Pay -->
+        <record id="hr_salary_rule_se_vacation_pay" model="hr.salary.rule">
+            <field name="name">Vacation Pay</field>
+            <field name="sequence" eval="30"/>
+            <field name="code">SEVACPAY</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_allowance"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">
+# Check if this is a vacation payout month (usually June)
+result = payslip.date_from.month == 6
+            </field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = employee.accrued_vacation_pay
+            </field>
+            <field name="is_swedish_specific" eval="True"/>
+        </record>
+        
+        <!-- Overtime Pay -->
+        <record id="hr_salary_rule_se_overtime" model="hr.salary.rule">
+            <field name="name">Overtime Pay</field>
+            <field name="sequence" eval="20"/>
+            <field name="code">SEOVT</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_allowance"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">
+# Check for any overtime in the period
+overtime = self.env['hr.overtime.swedish'].search([
+    ('employee_id', '=', employee.id),
+    ('date', '>=', payslip.date_from),
+    ('date', '<=', payslip.date_to),
+    ('state', '=', 'approved'),
+    ('compensation_type', 'in', ['money', 'mixed'])
+])
+result = bool(overtime)
+            </field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+overtime = self.env['hr.overtime.swedish'].search([
+    ('employee_id', '=', employee.id),
+    ('date', '>=', payslip.date_from),
+    ('date', '<=', payslip.date_to),
+    ('state', '=', 'approved'),
+    ('compensation_type', 'in', ['money', 'mixed'])
+])
+
+# Sum up all overtime compensation
+result = sum(overtime.mapped('compensation_amount'))
+
+# Mark overtime as paid
+overtime.write({'state': 'paid'})
+            </field>
+            <field name="is_swedish_specific" eval="True"/>
+        </record>
+        
+        <!-- Sick Leave Pay -->
+        <record id="hr_salary_rule_se_sick_pay" model="hr.salary.rule">
+            <field name="name">Sick Pay</field>
+            <field name="sequence" eval="25"/>
+            <field name="code">SESICK</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_allowance"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">
+# Check for any sick leave in the period
+sick_leave = self.env['hr.leave'].search([
+    ('employee_id', '=', employee.id),
+    ('date_from', '>=', payslip.date_from),
+    ('date_to', '<=', payslip.date_to),
+    ('state', 'in', ['validate', 'validate1']),
+    ('is_swedish_sick_leave', '=', True)
+])
+result = bool(sick_leave)
+            </field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+sick_leave = self.env['hr.leave'].search([
+    ('employee_id', '=', employee.id),
+    ('date_from', '>=', payslip.date_from),
+    ('date_to', '<=', payslip.date_to),
+    ('state', 'in', ['validate', 'validate1']),
+    ('is_swedish_sick_leave', '=', True)
+])
+
+total_days = sum(sick_leave.mapped('number_of_days'))
+daily_wage = contract.wage / 30  # Simplified daily wage calculation
+
+# First day is karensdag (80%), remaining days at 80%
+result = 0
+for leave in sick_leave:
+    if leave.is_karensdag:
+        result += daily_wage * 0.8
+    else:
+        result += daily_wage * leave.sickness_benefit_percentage / 100 * (leave.number_of_days - 1 if leave.is_karensdag else leave.number_of_days)
+            </field>
+            <field name="is_swedish_specific" eval="True"/>
+        </record>
+        
+        <!-- Parental Leave Supplement -->
+        <record id="hr_salary_rule_se_parental_supplement" model="hr.salary.rule">
+            <field name="name">Parental Leave Supplement</field>
+            <field name="sequence" eval="26"/>
+            <field name="code">SEPARSUPP</field>
+            <field name="category_id" ref="hr_salary_rule_category_se_allowance"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">
+# Check for any parental leave with salary supplement in the period
+parental_leave = self.env['hr.leave'].search([
+    ('employee_id', '=', employee.id),
+    ('date_from', '>=', payslip.date_from),
+    ('date_to', '<=', payslip.date_to),
+    ('state', 'in', ['validate', 'validate1']),
+    ('is_swedish_parental_leave', '=', True),
+    ('salary_supplement', '=', True)
+])
+result = bool(parental_leave)
+            </field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+parental_leave = self.env['hr.leave'].search([
+    ('employee_id', '=', employee.id),
+    ('date_from', '>=', payslip.date_from),
+    ('date_to', '<=', payslip.date_to),
+    ('state', 'in', ['validate', 'validate1']),
+    ('is_swedish_parental_leave', '=', True),
+    ('salary_supplement', '=', True)
+])
+
+result = 0
+daily_wage = contract.wage / 30
+
+for leave in parental_leave:
+    # Calculate supplement based on benefit percentage and supplement percentage
+    benefit_pct = float(leave.benefit_percentage) / 100
+    supplement_pct = leave.supplement_percentage / 100
+    
+    # FK pays benefit_pct, employer supplements with supplement_pct
+    result += daily_wage * supplement_pct * leave.number_of_days
+            </field>
+            <field name="is_swedish_specific" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Main Menu for Swedish HR -->
+    <menuitem id="menu_l10n_se_hr_root"
+              name="Swedish HR"
+              parent="hr.menu_hr_root"
+              sequence="90"/>
+
+    <!-- Swedish Tax Tables -->
+    <record id="action_hr_swedish_tax_table" model="ir.actions.act_window">
+        <field name="name">Swedish Tax Tables</field>
+        <field name="res_model">hr.swedish.tax.table</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first tax table!
+            </p>
+            <p>
+                Define Swedish tax tables for payroll calculations.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_hr_swedish_tax_table"
+              name="Tax Tables"
+              parent="menu_l10n_se_hr_root"
+              action="action_hr_swedish_tax_table"
+              sequence="1"/>
+
+    <!-- Municipalities -->
+    <record id="action_res_municipality" model="ir.actions.act_window">
+        <field name="name">Municipalities</field>
+        <field name="res_model">res.municipality</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first municipality!
+            </p>
+            <p>
+                Define Swedish municipalities with tax rates.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_res_municipality"
+              name="Municipalities"
+              parent="menu_l10n_se_hr_root"
+              action="action_res_municipality"
+              sequence="2"/>
+
+    <!-- Regions -->
+    <record id="action_res_region" model="ir.actions.act_window">
+        <field name="name">Regions</field>
+        <field name="res_model">res.region</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first region!
+            </p>
+            <p>
+                Define Swedish regions.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_res_region"
+              name="Regions"
+              parent="menu_l10n_se_hr_root"
+              action="action_res_region"
+              sequence="3"/>
+
+    <!-- Parishes -->
+    <record id="action_res_parish" model="ir.actions.act_window">
+        <field name="name">Parishes</field>
+        <field name="res_model">res.parish</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first parish!
+            </p>
+            <p>
+                Define Swedish parishes for church taxation.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_res_parish"
+              name="Parishes"
+              parent="menu_l10n_se_hr_root"
+              action="action_res_parish"
+              sequence="4"/>
+
+    <!-- Parental Leave Report -->
+    <record id="action_report_parental_leave" model="ir.actions.act_window">
+        <field name="name">Parental Leave Report</field>
+        <field name="res_model">report.parental.leave</field>
+        <field name="view_mode">tree,pivot</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No parental leave records yet.
+            </p>
+            <p>
+                This report shows all parental leave records for Försäkringskassan reporting.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_report_parental_leave"
+              name="Parental Leave Report"
+              parent="menu_l10n_se_hr_root"
+              action="action_report_parental_leave"
+              sequence="5"/>
+              
+    <!-- Swedish Rules Documentation -->
+    <record id="action_swedish_hr_rules" model="ir.actions.act_url">
+        <field name="name">Swedish HR Rules</field>
+        <field name="url">/se-hr-rules</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_swedish_hr_rules"
+              name="Swedish HR Rules"
+              parent="menu_l10n_se_hr_root"
+              action="action_swedish_hr_rules"
+              sequence="99"/>
+</odoo>

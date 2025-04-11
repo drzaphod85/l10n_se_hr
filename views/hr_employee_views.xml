@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Children Form View -->
+    <record id="view_employee_child_form" model="ir.ui.view">
+        <field name="name">hr.employee.child.form</field>
+        <field name="model">hr.employee.child</field>
+        <field name="arch" type="xml">
+            <form string="Child Information">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="birth_date"/>
+                        <field name="personnummer"/>
+                        <field name="age" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Children Tree View -->
+    <record id="view_employee_child_tree" model="ir.ui.view">
+        <field name="name">hr.employee.child.tree</field>
+        <field name="model">hr.employee.child</field>
+        <field name="arch" type="xml">
+            <tree string="Children">
+                <field name="name"/>
+                <field name="birth_date"/>
+                <field name="personnummer"/>
+                <field name="age"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Employee Form View Inheritance - Swedish Tab -->
+    <record id="view_employee_form_inherit_l10n_se_hr_extended" model="ir.ui.view">
+        <field name="name">hr.employee.form.inherit.l10n.se.hr.extended</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Swedish HR" name="swedish_hr">
+                    <group>
+                        <group string="Personal Information">
+                            <field name="swedish_personnummer"/>
+                            <field name="region_id"/>
+                            <field name="municipality_id" domain="[('region_id', '=', region_id)]"/>
+                            <field name="tax_table_number"/>
+                            <field name="church_member"/>
+                            <field name="parish_id" 
+                                domain="[('municipality_id', '=', municipality_id)]"
+                                attrs="{'invisible': [('church_member', '=', False)]}"/>
+                        </group>
+                        <group string="Swedish Leave Information">
+                            <field name="swedish_vacation_days"/>
+                            <field name="remaining_swedish_vacation_days"/>
+                            <field name="vacation_salary_base"/>
+                            <field name="accrued_vacation_pay"/>
+                            <field name="sick_leave_days"/>
+                            <field name="sick_leave_counter"/>
+                            <field name="frequently_ill"/>
+                            <field name="parental_leave_days_used"/>
+                            <field name="parental_leave_days_remaining"/>
+                            <field name="vab_days_used"/>
+                            <field name="overtime_hours" widget="float_time"/>
+                            <field name="overtime_count"/>
+                        </group>
+                    </group>
+                    
+                    <group string="Children">
+                        <field name="children_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="birth_date"/>
+                                <field name="personnummer"/>
+                                <field name="age"/>
+                            </tree>
+                        </field>
+                    </group>
+                </page>
+            </notebook>
+            
+            <!-- Add Smart Buttons -->
+            <div name="button_box" position="inside">
+                <button name="%(action_hr_overtime_swedish)d" type="action"
+                        class="oe_stat_button" icon="fa-clock-o"
+                        context="{'search_default_employee_id': id}">
+                    <field name="overtime_count" string="Overtime" widget="statinfo"/>
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

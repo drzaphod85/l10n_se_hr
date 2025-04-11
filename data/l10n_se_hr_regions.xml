@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Swedish Regions (län) -->
+        <record id="region_01" model="res.region">
+            <field name="name">Stockholm</field>
+            <field name="code">01</field>
+        </record>
+        <record id="region_03" model="res.region">
+            <field name="name">Uppsala</field>
+            <field name="code">03</field>
+        </record>
+        <record id="region_04" model="res.region">
+            <field name="name">Södermanland</field>
+            <field name="code">04</field>
+        </record>
+        <record id="region_05" model="res.region">
+            <field name="name">Östergötland</field>
+            <field name="code">05</field>
+        </record>
+        <record id="region_06" model="res.region">
+            <field name="name">Jönköping</field>
+            <field name="code">06</field>
+        </record>
+        <record id="region_07" model="res.region">
+            <field name="name">Kronoberg</field>
+            <field name="code">07</field>
+        </record>
+        <record id="region_08" model="res.region">
+            <field name="name">Kalmar</field>
+            <field name="code">08</field>
+        </record>
+        <record id="region_09" model="res.region">
+            <field name="name">Gotland</field>
+            <field name="code">09</field>
+        </record>
+        <record id="region_10" model="res.region">
+            <field name="name">Blekinge</field>
+            <field name="code">10</field>
+        </record>
+        <record id="region_12" model="res.region">
+            <field name="name">Skåne</field>
+            <field name="code">12</field>
+        </record>
+        <record id="region_13" model="res.region">
+            <field name="name">Halland</field>
+            <field name="code">13</field>
+        </record>
+        <record id="region_14" model="res.region">
+            <field name="name">Västra Götaland</field>
+            <field name="code">14</field>
+        </record>
+        <record id="region_17" model="res.region">
+            <field name="name">Värmland</field>
+            <field name="code">17</field>
+        </record>
+        <record id="region_18" model="res.region">
+            <field name="name">Örebro</field>
+            <field name="code">18</field>
+        </record>
+        <record id="region_19" model="res.region">
+            <field name="name">Västmanland</field>
+            <field name="code">19</field>
+        </record>
+        <record id="region_20" model="res.region">
+            <field name="name">Dalarna</field>
+            <field name="code">20</field>
+        </record>
+        <record id="region_21" model="res.region">
+            <field name="name">Gävleborg</field>
+            <field name="code">21</field>
+        </record>
+        <record id="region_22" model="res.region">
+            <field name="name">Västernorrland</field>
+            <field name="code">22</field>
+        </record>
+        <record id="region_23" model="res.region">
+            <field name="name">Jämtland</field>
+            <field name="code">23</field>
+        </record>
+        <record id="region_24" model="res.region">
+            <field name="name">Västerbotten</field>
+            <field name="code">24</field>
+        </record>
+        <record id="region_25" model="res.region">
+            <field name="name">Norrbotten</field>
+            <field name="code">25</field>
+        </record>
+    </data>
+</odoo>

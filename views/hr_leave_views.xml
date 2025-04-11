@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Leave Form View Inheritance - Swedish Sick Leave -->
+    <record id="hr_leave_view_form_inherit_sick_leave" model="ir.ui.view">
+        <field name="name">hr.leave.view.form.inherit.sick.leave</field>
+        <field name="model">hr.leave</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Swedish Sick Leave" attrs="{'invisible': [('is_swedish_sick_leave', '=', False)]}">
+                    <group>
+                        <group>
+                            <field name="is_swedish_sick_leave" invisible="1"/>
+                            <field name="is_karensdag"/>
+                            <field name="illness_type"/>
+                            <field name="doctor_certificate_required"/>
+                            <field name="doctor_certificate_provided" attrs="{'required': [('doctor_certificate_required', '=', True)]}"/>
+                        </group>
+                        <group>
+                            <field name="sickness_benefit_percentage"/>
+                            <field name="employer_period"/>
+                            <field name="days_since_last_sick_leave"/>
+                        </group>
+                    </group>
+                    <group attrs="{'invisible': [('employer_period', '=', True)]}">
+                        <button name="action_report_sickness_to_fk" 
+                                string="Report to Försäkringskassan" 
+                                type="object" 
+                                class="oe_highlight"
+                                attrs="{'invisible': [('state', 'not in', ['validate', 'validate1'])]}"/>
+                    </group>
+                </page>
+
+                <!-- Swedish Parental Leave -->
+                <page string="Swedish Parental Leave" attrs="{'invisible': [('is_swedish_parental_leave', '=', False)]}">
+                    <group>
+                        <group>
+                            <field name="is_swedish_parental_leave" invisible="1"/>
+                            <field name="parental_leave_type"/>
+                            <field name="fk_case_number"/>
+                            <field name="benefit_percentage"/>
+                        </group>
+                        <group>
+                            <field name="child_birth_date"/>
+                            <field name="child_name"/>
+                            <field name="child_personnummer"/>
+                            <field name="salary_supplement"/>
+                            <field name="supplement_percentage" attrs="{'invisible': [('salary_supplement', '=', False)], 'required': [('salary_supplement', '=', True)]}"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Leave Type Form View Inheritance -->
+    <record id="hr_leave_type_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.leave.type.view.form.inherit</field>
+        <field name="model">hr.leave.type</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[1]" position="after">
+                <group string="Swedish Settings">
+                    <field name="is_swedish_vacation"/>
+                    <field name="vacation_pay_percentage" attrs="{'invisible': [('is_swedish_vacation', '=', False)]}"/>
+                    <field name="is_swedish_sick_leave"/>
+                    <field name="is_swedish_parental_leave"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

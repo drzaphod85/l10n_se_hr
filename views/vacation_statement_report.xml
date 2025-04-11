@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_vacation_statement">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="employee">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Vacation Statement</h2>
+                        <div class="row mt32 mb32">
+                            <div class="col-6">
+                                <strong>Employee:</strong> <span t-field="employee.name"/>
+                                <br/>
+                                <strong>Department:</strong> <span t-field="employee.department_id.name"/>
+                                <br/>
+                                <strong>Vacation Year:</strong> <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')[:4]"/>/<span t-esc="int(context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')[:4])+1"/>
+                            </div>
+                            <div class="col-6">
+                                <strong>Date:</strong> <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+                                <br/>
+                                <strong>Personal ID:</strong> <span t-field="employee.swedish_personnummer"/>
+                            </div>
+                        </div>
+                        
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th class="text-right">Days</th>
+                                    <th class="text-right">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Annual Vacation Entitlement</td>
+                                    <td class="text-right"><span t-field="employee.swedish_vacation_days"/></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Used Vacation Days</td>
+                                    <td class="text-right">
+                                        <t t-set="used_days" t-value="employee.swedish_vacation_days - employee.remaining_swedish_vacation_days"/>
+                                        <span t-esc="used_days"/>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Remaining Vacation Days</td>
+                                    <td class="text-right"><span t-field="employee.remaining_swedish_vacation_days"/></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Accrued Vacation Pay</td>
+                                    <td></td>
+                                    <td class="text-right"><span t-field="employee.accrued_vacation_pay"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="row mt32 mb32">
+                            <div class="col-12">
+                                <p>This statement shows your vacation entitlement and accrued vacation pay according to Swedish law.</p>
+                                <p>For questions or concerns, please contact the HR department.</p>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_report_vacation_statement" model="ir.actions.report">
+        <field name="name">Vacation Statement</field>
+        <field name="model">hr.employee</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_se_hr.report_vacation_statement</field>
+        <field name="report_file">l10n_se_hr.report_vacation_statement</field>
+        <field name="binding_model_id" ref="model_hr_employee"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

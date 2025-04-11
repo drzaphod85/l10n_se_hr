@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_report_parental_leave_tree" model="ir.ui.view">
+        <field name="name">report.parental.leave.tree</field>
+        <field name="model">report.parental.leave</field>
+        <field name="arch" type="xml">
+            <tree string="Parental Leave Report">
+                <field name="employee_id"/>
+                <field name="child_name"/>
+                <field name="child_birth_date"/>
+                <field name="leave_type"/>
+                <field name="benefit_percentage"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="number_of_days" sum="Total Days"/>
+                <field name="fk_case_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_report_parental_leave_pivot" model="ir.ui.view">
+        <field name="name">report.parental.leave.pivot</field>
+        <field name="model">report.parental.leave</field>
+        <field name="arch" type="xml">
+            <pivot string="Parental Leave Analysis">
+                <field name="employee_id" type="row"/>
+                <field name="leave_type" type="col"/>
+                <field name="number_of_days" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_report_parental_leave_search" model="ir.ui.view">
+        <field name="name">report.parental.leave.search</field>
+        <field name="model">report.parental.leave</field>
+        <field name="arch" type="xml">
+            <search string="Search Parental Leave Report">
+                <field name="employee_id"/>
+                <field name="child_name"/>
+                <field name="leave_type"/>
+                <field name="fk_case_number"/>
+                <filter string="This Year" name="this_year" 
+                        domain="[('date_from', '>=', datetime.datetime.now().strftime('%Y-01-01'))]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Employee" name="groupby_employee" domain="[]" context="{'group_by': 'employee_id'}"/>
+                    <filter string="Leave Type" name="groupby_type" domain="[]" context="{'group_by': 'leave_type'}"/>
+                    <filter string="Month" name="groupby_month" domain="[]" context="{'group_by': 'date_from:month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>

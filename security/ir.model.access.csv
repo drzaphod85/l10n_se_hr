@@ -1,0 +1,23 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_region_user,res.region user,model_res_region,base.group_user,1,0,0,0
+access_res_region_admin,res.region admin,model_res_region,base.group_system,1,1,1,1
+access_res_municipality_user,res.municipality user,model_res_municipality,base.group_user,1,0,0,0
+access_res_municipality_admin,res.municipality admin,model_res_municipality,base.group_system,1,1,1,1
+access_res_parish_user,res.parish user,model_res_parish,base.group_user,1,0,0,0
+access_res_parish_admin,res.parish admin,model_res_parish,base.group_system,1,1,1,1
+access_municipality_updater_user,municipality.updater user,model_municipality_updater,base.group_user,1,0,0,0
+access_municipality_updater_manager,municipality.updater manager,model_municipality_updater,hr.group_hr_manager,1,1,1,1
+access_hr_overtime_swedish_user,hr.overtime.swedish user,model_hr_overtime_swedish,base.group_user,1,1,1,0
+access_hr_overtime_swedish_manager,hr.overtime.swedish manager,model_hr_overtime_swedish,hr.group_hr_manager,1,1,1,1
+access_hr_employee_child_user,hr.employee.child user,model_hr_employee_child,base.group_user,1,0,0,0
+access_hr_employee_child_manager,hr.employee.child manager,model_hr_employee_child,hr.group_hr_manager,1,1,1,1
+access_hr_swedish_tax_table_user,hr.swedish.tax.table user,model_hr_swedish_tax_table,base.group_user,1,0,0,0
+access_hr_swedish_tax_table_manager,hr.swedish.tax.table manager,model_hr_swedish_tax_table,hr.group_hr_manager,1,1,1,1
+access_hr_swedish_tax_table_column_user,hr.swedish.tax.table.column user,model_hr_swedish_tax_table_column,base.group_user,1,0,0,0
+access_hr_swedish_tax_table_column_manager,hr.swedish.tax.table.column manager,model_hr_swedish_tax_table_column,hr.group_hr_manager,1,1,1,1
+access_hr_swedish_tax_bracket_user,hr.swedish.tax.bracket user,model_hr_swedish_tax_bracket,base.group_user,1,0,0,0
+access_hr_swedish_tax_bracket_manager,hr.swedish.tax.bracket manager,model_hr_swedish_tax_bracket,hr.group_hr_manager,1,1,1,1
+access_report_sick_leave_wizard_user,report.sick.leave.wizard user,model_report_sick_leave_wizard,base.group_user,1,1,1,0
+access_overtime_reject_wizard_manager,overtime.reject.wizard manager,model_overtime_reject_wizard,hr.group_hr_manager,1,1,1,0
+access_report_parental_leave_user,report.parental.leave user,model_report_parental_leave,base.group_user,1,0,0,0
+access_report_parental_leave_manager,report.parental.leave manager,model_report_parental_leave,hr.group_hr_manager,1,0,0,0
