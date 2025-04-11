@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_0604" model="res.municipality"> <field name="name">Aneby</field>
+            <field name="code">0604</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0617" model="res.municipality"> <field name="name">Gnosjö</field>
+            <field name="code">0617</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0642" model="res.municipality"> <field name="name">Mullsjö</field>
+            <field name="code">0642</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0643" model="res.municipality"> <field name="name">Habo</field>
+            <field name="code">0643</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0662" model="res.municipality"> <field name="name">Gislaved</field>
+            <field name="code">0662</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0665" model="res.municipality"> <field name="name">Vaggeryd</field>
+            <field name="code">0665</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0680" model="res.municipality"> <field name="name">Jönköping</field>
+            <field name="code">0680</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0682" model="res.municipality"> <field name="name">Nässjö</field>
+            <field name="code">0682</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0683" model="res.municipality"> <field name="name">Värnamo</field>
+            <field name="code">0683</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0684" model="res.municipality"> <field name="name">Sävsjö</field>
+            <field name="code">0684</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0685" model="res.municipality"> <field name="name">Vetlanda</field>
+            <field name="code">0685</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0686" model="res.municipality"> <field name="name">Eksjö</field>
+            <field name="code">0686</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0687" model="res.municipality"> <field name="name">Tranås</field>
+            <field name="code">0687</field>
+            <field name="region_id" ref="l10n_se_hr.region_05"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

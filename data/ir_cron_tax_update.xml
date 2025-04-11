@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Scheduler for Updating Tax Rates from Skatteverket -->
-        <record id="ir_cron_update_tax_rates" model="ir.cron">
-            <field name="name">Update Municipality Tax Rates</field>
-            <field name="model_id" ref="model_municipality_updater"/>
-            <field name="state">code</field>
+
+        <record id="action_server_update_tax_rates" model="ir.actions.server">
+            <field name="name">Update Municipality Tax Rates Action</field>
+            <field name="model_id" ref="model_municipality_updater"/> <field name="state">code</field>
             <field name="code">model.update_municipalities()</field>
-            <field name="interval_number">7</field>
-            <field name="interval_type">days</field>
-            <field name="numbercall">-1</field>
-            <field name="doall" eval="False"/>
-            <field name="active" eval="True"/>
-            <field name="nextcall" eval="(datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%Y-%m-%d 03:00:00')"/>
         </record>
 
-        <!-- Run once at module installation -->
-        <function model="municipality.updater" name="update_municipalities"/>
+        <record id="ir_cron_update_tax_rates" model="ir.cron">
+            <field name="ir_actions_server_id" ref="action_server_update_tax_rates"/>
+            <field name="user_id" ref="base.user_root"/> <field name="active" eval="True"/>
+            <field name="interval_number">7</field>
+            <field name="interval_type">days</field>
+            <field name="nextcall" eval="(datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d 03:00:00')"/>
+            </record>
+
+        <function model="municipality.updater" name="update_municipalities"/> 
+
     </data>
 </odoo>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_0760" model="res.municipality"> <field name="name">Uppvidinge</field>
+            <field name="code">0760</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0761" model="res.municipality"> <field name="name">Lessebo</field>
+            <field name="code">0761</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0763" model="res.municipality"> <field name="name">Tingsryd</field>
+            <field name="code">0763</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0764" model="res.municipality"> <field name="name">Alvesta</field>
+            <field name="code">0764</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0765" model="res.municipality"> <field name="name">Älmhult</field>
+            <field name="code">0765</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0767" model="res.municipality"> <field name="name">Markaryd</field>
+            <field name="code">0767</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">32</field> </record>
+        <record id="municipality_0780" model="res.municipality"> <field name="name">Växjö</field>
+            <field name="code">0780</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">32</field> </record>
+        <record id="municipality_0781" model="res.municipality"> <field name="name">Ljungby</field>
+            <field name="code">0781</field>
+            <field name="region_id" ref="l10n_se_hr.region_06"/>
+            <field name="tax_table_number">33</field> </record>
+
+    </data>
+</odoo>

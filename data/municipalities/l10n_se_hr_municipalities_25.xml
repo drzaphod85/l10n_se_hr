@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_2505" model="res.municipality"> <field name="name">Arvidsjaur</field>
+            <field name="code">2505</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2506" model="res.municipality"> <field name="name">Arjeplog</field>
+            <field name="code">2506</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2510" model="res.municipality"> <field name="name">Jokkmokk</field>
+            <field name="code">2510</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2513" model="res.municipality"> <field name="name">Överkalix</field>
+            <field name="code">2513</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2514" model="res.municipality"> <field name="name">Kalix</field>
+            <field name="code">2514</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2518" model="res.municipality"> <field name="name">Övertorneå</field>
+            <field name="code">2518</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">36</field> </record>
+        <record id="municipality_2521" model="res.municipality"> <field name="name">Pajala</field>
+            <field name="code">2521</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">36</field> </record>
+        <record id="municipality_2523" model="res.municipality"> <field name="name">Gällivare</field>
+            <field name="code">2523</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2560" model="res.municipality"> <field name="name">Älvsbyn</field>
+            <field name="code">2560</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2580" model="res.municipality"> <field name="name">Luleå</field>
+            <field name="code">2580</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2581" model="res.municipality"> <field name="name">Piteå</field>
+            <field name="code">2581</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2582" model="res.municipality"> <field name="name">Boden</field>
+            <field name="code">2582</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2583" model="res.municipality"> <field name="name">Haparanda</field>
+            <field name="code">2583</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2584" model="res.municipality"> <field name="name">Kiruna</field>
+            <field name="code">2584</field>
+            <field name="region_id" ref="l10n_se_hr.region_25"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

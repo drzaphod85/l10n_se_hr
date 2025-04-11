@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_2401" model="res.municipality"> <field name="name">Nordmaling</field>
+            <field name="code">2401</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2403" model="res.municipality"> <field name="name">Bjurholm</field>
+            <field name="code">2403</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2404" model="res.municipality"> <field name="name">Vindeln</field>
+            <field name="code">2404</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2409" model="res.municipality"> <field name="name">Robertsfors</field>
+            <field name="code">2409</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2417" model="res.municipality"> <field name="name">Norsjö</field>
+            <field name="code">2417</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2418" model="res.municipality"> <field name="name">Malå</field>
+            <field name="code">2418</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2421" model="res.municipality"> <field name="name">Storuman</field>
+            <field name="code">2421</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2422" model="res.municipality"> <field name="name">Sorsele</field>
+            <field name="code">2422</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2425" model="res.municipality"> <field name="name">Dorotea</field>
+            <field name="code">2425</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2460" model="res.municipality"> <field name="name">Vännäs</field>
+            <field name="code">2460</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2462" model="res.municipality"> <field name="name">Vilhelmina</field>
+            <field name="code">2462</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2463" model="res.municipality"> <field name="name">Åsele</field>
+            <field name="code">2463</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2480" model="res.municipality"> <field name="name">Umeå</field>
+            <field name="code">2480</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2481" model="res.municipality"> <field name="name">Lycksele</field>
+            <field name="code">2481</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2482" model="res.municipality"> <field name="name">Skellefteå</field>
+            <field name="code">2482</field>
+            <field name="region_id" ref="l10n_se_hr.region_24"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

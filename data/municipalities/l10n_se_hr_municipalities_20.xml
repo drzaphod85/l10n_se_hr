@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_2021" model="res.municipality"> <field name="name">Vansbro</field>
+            <field name="code">2021</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2023" model="res.municipality"> <field name="name">Malung-Sälen</field>
+            <field name="code">2023</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2026" model="res.municipality"> <field name="name">Gagnef</field>
+            <field name="code">2026</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2029" model="res.municipality"> <field name="name">Rättvik</field>
+            <field name="code">2029</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_2034" model="res.municipality"> <field name="name">Orsa</field>
+            <field name="code">2034</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2039" model="res.municipality"> <field name="name">Älvdalen</field>
+            <field name="code">2039</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2061" model="res.municipality"> <field name="name">Leksand</field>
+            <field name="code">2061</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_2062" model="res.municipality"> <field name="name">Mora</field>
+            <field name="code">2062</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_2080" model="res.municipality"> <field name="name">Falun</field>
+            <field name="code">2080</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2081" model="res.municipality"> <field name="name">Borlänge</field>
+            <field name="code">2081</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2082" model="res.municipality"> <field name="name">Smedjebacken</field>
+            <field name="code">2082</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2083" model="res.municipality"> <field name="name">Hedemora</field>
+            <field name="code">2083</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2084" model="res.municipality"> <field name="name">Avesta</field>
+            <field name="code">2084</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2085" model="res.municipality"> <field name="name">Ludvika</field>
+            <field name="code">2085</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+         <record id="municipality_2086" model="res.municipality"> <field name="name">Säter</field>
+            <field name="code">2086</field>
+            <field name="region_id" ref="l10n_se_hr.region_20"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

@@ -4,7 +4,6 @@
         <!-- Swedish Vacation -->
         <record id="holiday_status_swedish_vacation" model="hr.leave.type">
             <field name="name">Swedish Vacation</field>
-            <field name="code">SEVAC</field>
             <field name="allocation_type">fixed</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">yes</field>
@@ -15,7 +14,6 @@
         <!-- Swedish Sick Leave -->
         <record id="holiday_status_swedish_sick_leave" model="hr.leave.type">
             <field name="name">Swedish Sick Leave</field>
-            <field name="code">SESIC</field>
             <field name="allocation_type">no</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">no</field>
@@ -25,7 +23,6 @@
         <!-- Swedish Parental Leave -->
         <record id="holiday_status_swedish_parental_leave" model="hr.leave.type">
             <field name="name">Swedish Parental Leave</field>
-            <field name="code">SEPAR</field>
             <field name="allocation_type">no</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">no</field>
@@ -35,7 +32,6 @@
         <!-- Swedish Overtime Compensation -->
         <record id="holiday_status_swedish_overtime" model="hr.leave.type">
             <field name="name">Overtime Compensation</field>
-            <field name="code">SEOVT</field>
             <field name="allocation_type">fixed</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">yes</field>

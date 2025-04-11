@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_0428" model="res.municipality"> <field name="name">Vingåker</field>
+            <field name="code">0428</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0461" model="res.municipality"> <field name="name">Gnesta</field>
+            <field name="code">0461</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0480" model="res.municipality"> <field name="name">Nyköping</field>
+            <field name="code">0480</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0481" model="res.municipality"> <field name="name">Oxelösund</field>
+            <field name="code">0481</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0482" model="res.municipality"> <field name="name">Flen</field>
+            <field name="code">0482</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0483" model="res.municipality"> <field name="name">Katrineholm</field>
+            <field name="code">0483</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0484" model="res.municipality"> <field name="name">Eskilstuna</field>
+            <field name="code">0484</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0486" model="res.municipality"> <field name="name">Strängnäs</field>
+            <field name="code">0486</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0488" model="res.municipality"> <field name="name">Trosa</field>
+            <field name="code">0488</field>
+            <field name="region_id" ref="l10n_se_hr.region_09"/>
+            <field name="tax_table_number">32</field> </record>
+
+    </data>
+</odoo>

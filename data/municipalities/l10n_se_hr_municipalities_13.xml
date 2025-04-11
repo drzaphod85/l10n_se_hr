@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_1315" model="res.municipality"> <field name="name">Hylte</field>
+            <field name="code">1315</field>
+            <field name="region_id" ref="l10n_se_hr.region_13"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_1380" model="res.municipality"> <field name="name">Halmstad</field>
+            <field name="code">1380</field>
+            <field name="region_id" ref="l10n_se_hr.region_13"/>
+            <field name="tax_table_number">32</field> </record>
+        <record id="municipality_1381" model="res.municipality"> <field name="name">Laholm</field>
+            <field name="code">1381</field>
+            <field name="region_id" ref="l10n_se_hr.region_13"/>
+            <field name="tax_table_number">32</field> </record>
+        <record id="municipality_1382" model="res.municipality"> <field name="name">Falkenberg</field>
+            <field name="code">1382</field>
+            <field name="region_id" ref="l10n_se_hr.region_13"/>
+            <field name="tax_table_number">32</field> </record>
+        <record id="municipality_1383" model="res.municipality"> <field name="name">Varberg</field>
+            <field name="code">1383</field>
+            <field name="region_id" ref="l10n_se_hr.region_13"/>
+            <field name="tax_table_number">32</field> </record>
+        <record id="municipality_1384" model="res.municipality"> <field name="name">Kungsbacka</field>
+            <field name="code">1384</field>
+            <field name="region_id" ref="l10n_se_hr.region_13"/>
+            <field name="tax_table_number">32</field> </record>
+
+    </data>
+</odoo>

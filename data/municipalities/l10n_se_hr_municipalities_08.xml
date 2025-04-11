@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_0980" model="res.municipality">
+            <field name="name">Gotland</field>
+            <field name="code">0980</field>
+            <field name="region_id" ref="l10n_se_hr.region_08"/>
+            <field name="tax_table_number">33</field>
+        </record>
+    </data>
+</odoo>

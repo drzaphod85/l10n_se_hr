@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_1814" model="res.municipality"> <field name="name">Lekeberg</field>
+            <field name="code">1814</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1860" model="res.municipality"> <field name="name">Hallsberg</field>
+            <field name="code">1860</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1861" model="res.municipality"> <field name="name">Laxå</field>
+            <field name="code">1861</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1862" model="res.municipality"> <field name="name">Degerfors</field>
+            <field name="code">1862</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1863" model="res.municipality"> <field name="name">Hällefors</field>
+            <field name="code">1863</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_1864" model="res.municipality"> <field name="name">Ljusnarsberg</field>
+            <field name="code">1864</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_1880" model="res.municipality"> <field name="name">Örebro</field>
+            <field name="code">1880</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_1881" model="res.municipality"> <field name="name">Kumla</field>
+            <field name="code">1881</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1882" model="res.municipality"> <field name="name">Askersund</field>
+            <field name="code">1882</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1883" model="res.municipality"> <field name="name">Karlskoga</field>
+            <field name="code">1883</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1884" model="res.municipality"> <field name="name">Nora</field>
+            <field name="code">1884</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1885" model="res.municipality"> <field name="name">Lindesberg</field>
+            <field name="code">1885</field>
+            <field name="region_id" ref="l10n_se_hr.region_18"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

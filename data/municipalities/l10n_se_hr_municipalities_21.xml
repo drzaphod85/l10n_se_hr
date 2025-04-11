@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_2101" model="res.municipality"> <field name="name">Ockelbo</field>
+            <field name="code">2101</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2104" model="res.municipality"> <field name="name">Hofors</field>
+            <field name="code">2104</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2121" model="res.municipality"> <field name="name">Ovanåker</field>
+            <field name="code">2121</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2132" model="res.municipality"> <field name="name">Nordanstig</field>
+            <field name="code">2132</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2161" model="res.municipality"> <field name="name">Ljusdal</field>
+            <field name="code">2161</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2180" model="res.municipality"> <field name="name">Gävle</field>
+            <field name="code">2180</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2181" model="res.municipality"> <field name="name">Sandviken</field>
+            <field name="code">2181</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2182" model="res.municipality"> <field name="name">Söderhamn</field>
+            <field name="code">2182</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2183" model="res.municipality"> <field name="name">Bollnäs</field>
+            <field name="code">2183</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2184" model="res.municipality"> <field name="name">Hudiksvall</field>
+            <field name="code">2184</field>
+            <field name="region_id" ref="l10n_se_hr.region_21"/>
+            <field name="tax_table_number">35</field> </record>
+
+    </data>
+</odoo>

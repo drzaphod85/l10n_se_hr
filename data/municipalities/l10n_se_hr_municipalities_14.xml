@@ -1,156 +1,348 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Municipalities for Västra Götaland region -->
         <record id="municipality_1401" model="res.municipality">
             <field name="name">Härryda</field>
             <field name="code">1401</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1402" model="res.municipality">
-            <field name="name">Partille</field>
+            <field name="name">Öckerö</field>
             <field name="code">1402</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">31</field>
         </record>
+
         <record id="municipality_1407" model="res.municipality">
-            <field name="name">Öckerö</field>
+            <field name="name">Partille</field>
             <field name="code">1407</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">32</field>
         </record>
+
         <record id="municipality_1415" model="res.municipality">
             <field name="name">Stenungsund</field>
             <field name="code">1415</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">32</field>
         </record>
+
         <record id="municipality_1419" model="res.municipality">
             <field name="name">Tjörn</field>
             <field name="code">1419</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">32</field>
         </record>
+
         <record id="municipality_1421" model="res.municipality">
             <field name="name">Orust</field>
             <field name="code">1421</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1427" model="res.municipality">
             <field name="name">Sotenäs</field>
             <field name="code">1427</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1430" model="res.municipality">
             <field name="name">Munkedal</field>
             <field name="code">1430</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">34</field>
         </record>
+
         <record id="municipality_1435" model="res.municipality">
             <field name="name">Tanum</field>
             <field name="code">1435</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1438" model="res.municipality">
             <field name="name">Dals-Ed</field>
             <field name="code">1438</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">34</field>
         </record>
+
         <record id="municipality_1439" model="res.municipality">
             <field name="name">Färgelanda</field>
             <field name="code">1439</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">34</field>
         </record>
+
         <record id="municipality_1440" model="res.municipality">
             <field name="name">Ale</field>
             <field name="code">1440</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1441" model="res.municipality">
             <field name="name">Lerum</field>
             <field name="code">1441</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
-        <record id="municipality_1442" model="res.municipality">
-            <field name="name">Vårgårda</field>
-            <field name="code">1442</field>
-            <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+
         <record id="municipality_1443" model="res.municipality">
-            <field name="name">Bollebygd</field>
+            <field name="name">Vårgårda</field>
             <field name="code">1443</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1444" model="res.municipality">
-            <field name="name">Grästorp</field>
+            <field name="name">Karlsborg</field>
             <field name="code">1444</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+        
         <record id="municipality_1445" model="res.municipality">
-            <field name="name">Essunga</field>
+            <field name="name">Bollebygd</field>
             <field name="code">1445</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
+        <record id="municipality_1446" model="res.municipality">
+            <field name="name">Grästorp</field>
+            <field name="code">1446</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1447" model="res.municipality">
+            <field name="name">Essunga</field>
+            <field name="code">1447</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1460" model="res.municipality">
+            <field name="name">Gullspång</field>
+            <field name="code">1460</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1461" model="res.municipality">
+            <field name="name">Bengtsfors</field>
+            <field name="code">1461</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">34</field>
+        </record>
+
+        <record id="municipality_1462" model="res.municipality">
+            <field name="name">Mellerud</field>
+            <field name="code">1462</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">34</field>
+        </record>
+
+        <record id="municipality_1463" model="res.municipality">
+            <field name="name">Lilla Edet</field>
+            <field name="code">1463</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">34</field>
+        </record>
+
+        <record id="municipality_1464" model="res.municipality">
+            <field name="name">Mark</field>
+            <field name="code">1464</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1465" model="res.municipality">
+            <field name="name">Svenljunga</field>
+            <field name="code">1465</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1466" model="res.municipality">
+            <field name="name">Tranemo</field>
+            <field name="code">1466</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1467" model="res.municipality">
+            <field name="name">Herrljunga</field>
+            <field name="code">1467</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1470" model="res.municipality">
+            <field name="name">Vara</field>
+            <field name="code">1470</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1471" model="res.municipality">
+            <field name="name">Götene</field>
+            <field name="code">1471</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1472" model="res.municipality">
+            <field name="name">Tibro</field>
+            <field name="code">1472</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1473" model="res.municipality">
+            <field name="name">Töreboda</field>
+            <field name="code">1473</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
         <record id="municipality_1480" model="res.municipality">
             <field name="name">Göteborg</field>
             <field name="code">1480</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1481" model="res.municipality">
             <field name="name">Mölndal</field>
             <field name="code">1481</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">32</field>
         </record>
+
         <record id="municipality_1482" model="res.municipality">
             <field name="name">Kungälv</field>
             <field name="code">1482</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1484" model="res.municipality">
             <field name="name">Lysekil</field>
             <field name="code">1484</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1485" model="res.municipality">
             <field name="name">Uddevalla</field>
             <field name="code">1485</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
         </record>
+
+        <record id="municipality_1486" model="res.municipality">
+            <field name="name">Alingsås</field>
+            <field name="code">1486</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
         <record id="municipality_1487" model="res.municipality">
             <field name="name">Vänersborg</field>
             <field name="code">1487</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">34</field>
         </record>
+
         <record id="municipality_1488" model="res.municipality">
             <field name="name">Trollhättan</field>
             <field name="code">1488</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">34</field>
         </record>
+
         <record id="municipality_1489" model="res.municipality">
-            <field name="name">Alingsås</field>
+            <field name="name">Strömstad</field>
             <field name="code">1489</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
         </record>
+
         <record id="municipality_1490" model="res.municipality">
             <field name="name">Borås</field>
             <field name="code">1490</field>
             <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
         </record>
+
+        <record id="municipality_1491" model="res.municipality">
+            <field name="name">Ulricehamn</field>
+            <field name="code">1491</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1492" model="res.municipality">
+            <field name="name">Åmål</field>
+            <field name="code">1492</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">34</field>
+        </record>
+
+        <record id="municipality_1493" model="res.municipality">
+            <field name="name">Mariestad</field>
+            <field name="code">1493</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1494" model="res.municipality">
+            <field name="name">Lidköping</field>
+            <field name="code">1494</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1495" model="res.municipality">
+            <field name="name">Falköping</field>
+            <field name="code">1495</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1496" model="res.municipality">
+            <field name="name">Skara</field>
+            <field name="code">1496</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1497" model="res.municipality">
+            <field name="name">Skövde</field>
+            <field name="code">1497</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1498" model="res.municipality">
+            <field name="name">Hjo</field>
+            <field name="code">1498</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
+        <record id="municipality_1499" model="res.municipality">
+            <field name="name">Tidaholm</field>
+            <field name="code">1499</field>
+            <field name="region_id" ref="l10n_se_hr.region_14"/>
+            <field name="tax_table_number">33</field>
+        </record>
+
     </data>
 </odoo>

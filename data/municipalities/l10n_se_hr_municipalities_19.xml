@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_1904" model="res.municipality"> <field name="name">Surahammar</field>
+            <field name="code">1904</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1907" model="res.municipality"> <field name="name">Skinnskatteberg</field>
+            <field name="code">1907</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1960" model="res.municipality"> <field name="name">Kungsör</field>
+            <field name="code">1960</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1961" model="res.municipality"> <field name="name">Hallstahammar</field>
+            <field name="code">1961</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_1962" model="res.municipality"> <field name="name">Fagersta</field>
+            <field name="code">1962</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1963" model="res.municipality"> <field name="name">Norberg</field>
+            <field name="code">1963</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1980" model="res.municipality"> <field name="name">Västerås</field>
+            <field name="code">1980</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_1982" model="res.municipality"> <field name="name">Sala</field>
+            <field name="code">1982</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1983" model="res.municipality"> <field name="name">Köping</field>
+            <field name="code">1983</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_1984" model="res.municipality"> <field name="name">Arboga</field>
+            <field name="code">1984</field>
+            <field name="region_id" ref="l10n_se_hr.region_19"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

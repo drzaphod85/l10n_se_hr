@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_2303" model="res.municipality"> <field name="name">Berg</field>
+            <field name="code">2303</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2305" model="res.municipality"> <field name="name">Bräcke</field>
+            <field name="code">2305</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2309" model="res.municipality"> <field name="name">Krokom</field>
+            <field name="code">2309</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2313" model="res.municipality"> <field name="name">Ragunda</field>
+            <field name="code">2313</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2321" model="res.municipality"> <field name="name">Strömsund</field>
+            <field name="code">2321</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2326" model="res.municipality"> <field name="name">Åre</field>
+            <field name="code">2326</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2361" model="res.municipality"> <field name="name">Härjedalen</field>
+            <field name="code">2361</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2380" model="res.municipality"> <field name="name">Östersund</field>
+            <field name="code">2380</field>
+            <field name="region_id" ref="l10n_se_hr.region_23"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

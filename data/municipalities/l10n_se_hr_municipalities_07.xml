@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_0821" model="res.municipality"> <field name="name">Högsby</field>
+            <field name="code">0821</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0834" model="res.municipality"> <field name="name">Torsås</field>
+            <field name="code">0834</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0840" model="res.municipality"> <field name="name">Mörbylånga</field>
+            <field name="code">0840</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0860" model="res.municipality"> <field name="name">Emmaboda</field>
+            <field name="code">0860</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0861" model="res.municipality"> <field name="name">Mönsterås</field>
+            <field name="code">0861</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0862" model="res.municipality"> <field name="name">Hultsfred</field>
+            <field name="code">0862</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0880" model="res.municipality"> <field name="name">Kalmar</field>
+            <field name="code">0880</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0881" model="res.municipality"> <field name="name">Nybro</field>
+            <field name="code">0881</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0882" model="res.municipality"> <field name="name">Oskarshamn</field>
+            <field name="code">0882</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0883" model="res.municipality"> <field name="name">Västervik</field>
+            <field name="code">0883</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">33</field> </record>
+        <record id="municipality_0884" model="res.municipality"> <field name="name">Vimmerby</field>
+            <field name="code">0884</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_0885" model="res.municipality"> <field name="name">Borgholm</field>
+            <field name="code">0885</field>
+            <field name="region_id" ref="l10n_se_hr.region_07"/>
+            <field name="tax_table_number">34</field> </record>
+
+    </data>
+</odoo>

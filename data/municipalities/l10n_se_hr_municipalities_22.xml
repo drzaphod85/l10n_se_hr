@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="municipality_2260" model="res.municipality"> <field name="name">Ånge</field>
+            <field name="code">2260</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2262" model="res.municipality"> <field name="name">Timrå</field>
+            <field name="code">2262</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2280" model="res.municipality"> <field name="name">Härnösand</field>
+            <field name="code">2280</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2281" model="res.municipality"> <field name="name">Sundsvall</field>
+            <field name="code">2281</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">34</field> </record>
+        <record id="municipality_2282" model="res.municipality"> <field name="name">Kramfors</field>
+            <field name="code">2282</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2283" model="res.municipality"> <field name="name">Sollefteå</field>
+            <field name="code">2283</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">35</field> </record>
+        <record id="municipality_2284" model="res.municipality"> <field name="name">Örnsköldsvik</field>
+            <field name="code">2284</field>
+            <field name="region_id" ref="l10n_se_hr.region_22"/>
+            <field name="tax_table_number">35</field> </record>
+
+    </data>
+</odoo>

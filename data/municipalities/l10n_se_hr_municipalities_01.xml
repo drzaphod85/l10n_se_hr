@@ -1,162 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Municipalities (kommuner) for Stockholm region -->
         <record id="municipality_0114" model="res.municipality">
             <field name="name">Upplands Väsby</field>
             <field name="code">0114</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0115" model="res.municipality">
             <field name="name">Vallentuna</field>
             <field name="code">0115</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0117" model="res.municipality">
             <field name="name">Österåker</field>
             <field name="code">0117</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0120" model="res.municipality">
             <field name="name">Värmdö</field>
             <field name="code">0120</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0123" model="res.municipality">
             <field name="name">Järfälla</field>
             <field name="code">0123</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0125" model="res.municipality">
             <field name="name">Ekerö</field>
             <field name="code">0125</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0126" model="res.municipality">
             <field name="name">Huddinge</field>
             <field name="code">0126</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0127" model="res.municipality">
             <field name="name">Botkyrka</field>
             <field name="code">0127</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0128" model="res.municipality">
             <field name="name">Salem</field>
             <field name="code">0128</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0136" model="res.municipality">
             <field name="name">Haninge</field>
             <field name="code">0136</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0138" model="res.municipality">
             <field name="name">Tyresö</field>
             <field name="code">0138</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0139" model="res.municipality">
             <field name="name">Upplands-Bro</field>
             <field name="code">0139</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0140" model="res.municipality">
             <field name="name">Nykvarn</field>
             <field name="code">0140</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0160" model="res.municipality">
             <field name="name">Täby</field>
             <field name="code">0160</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0162" model="res.municipality">
             <field name="name">Danderyd</field>
             <field name="code">0162</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0163" model="res.municipality">
             <field name="name">Sollentuna</field>
             <field name="code">0163</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0180" model="res.municipality">
             <field name="name">Stockholm</field>
             <field name="code">0180</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0181" model="res.municipality">
             <field name="name">Södertälje</field>
             <field name="code">0181</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0182" model="res.municipality">
             <field name="name">Nacka</field>
             <field name="code">0182</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0183" model="res.municipality">
             <field name="name">Sundbyberg</field>
             <field name="code">0183</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0184" model="res.municipality">
             <field name="name">Solna</field>
             <field name="code">0184</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0186" model="res.municipality">
             <field name="name">Lidingö</field>
             <field name="code">0186</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">30</field> </record>
         <record id="municipality_0187" model="res.municipality">
             <field name="name">Vaxholm</field>
             <field name="code">0187</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">31</field> </record>
         <record id="municipality_0188" model="res.municipality">
             <field name="name">Norrtälje</field>
             <field name="code">0188</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0191" model="res.municipality">
             <field name="name">Sigtuna</field>
             <field name="code">0191</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
         <record id="municipality_0192" model="res.municipality">
             <field name="name">Nynäshamn</field>
             <field name="code">0192</field>
             <field name="region_id" ref="l10n_se_hr.region_01"/>
-            <!-- Tax data will be fetched from Skatteverket API -->
-        </record>
+            <field name="tax_table_number">32</field> </record>
     </data>
 </odoo>
