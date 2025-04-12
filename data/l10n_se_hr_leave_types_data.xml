@@ -4,26 +4,23 @@
         <!-- Swedish Vacation -->
         <record id="holiday_status_swedish_vacation" model="hr.leave.type">
             <field name="name">Swedish Vacation</field>
-            <field name="allocation_type">fixed</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">yes</field>
             <field name="is_swedish_vacation" eval="True"/>
             <field name="vacation_pay_percentage">12.0</field>
         </record>
         
-        <!-- Swedish Sick Leave -->
+        <!-- Swedish Sick Leave
         <record id="holiday_status_swedish_sick_leave" model="hr.leave.type">
             <field name="name">Swedish Sick Leave</field>
-            <field name="allocation_type">no</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">no</field>
             <field name="is_swedish_sick_leave" eval="True"/>
-        </record>
+        </record>   -->
         
         <!-- Swedish Parental Leave -->
         <record id="holiday_status_swedish_parental_leave" model="hr.leave.type">
             <field name="name">Swedish Parental Leave</field>
-            <field name="allocation_type">no</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">no</field>
             <field name="is_swedish_parental_leave" eval="True"/>
@@ -32,7 +29,6 @@
         <!-- Swedish Overtime Compensation -->
         <record id="holiday_status_swedish_overtime" model="hr.leave.type">
             <field name="name">Overtime Compensation</field>
-            <field name="allocation_type">fixed</field>
             <field name="leave_validation_type">manager</field>
             <field name="requires_allocation">yes</field>
         </record>

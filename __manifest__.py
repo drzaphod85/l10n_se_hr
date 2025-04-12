@@ -19,6 +19,7 @@ This module adds Swedish-specific HR functionality:
     'author': 'Your Company',
     'website': 'https://www.yourcompany.com',
     'depends': [
+        'base'
         'hr',
         'hr_payroll',
         'hr_holidays',
@@ -49,7 +50,7 @@ This module adds Swedish-specific HR functionality:
             'data/municipalities/l10n_se_hr_municipalities_23.xml',
             'data/municipalities/l10n_se_hr_municipalities_24.xml',
             'data/municipalities/l10n_se_hr_municipalities_25.xml',
-                # Municipality tax update scheduler
+            # Municipality tax update scheduler
             'data/ir_cron_tax_update.xml',
             # Other data files
             'data/l10n_se_hr_leave_types_data.xml',
